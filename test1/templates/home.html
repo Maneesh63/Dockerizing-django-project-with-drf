@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items List</title>
+    {% load static %}  <!-- Load static files -->
+</head>
+<body>
+    <h1>Items</h1>
+    <ul id="item-list"></ul>
+
+    <h2>Add New Item</h2>
+    <form id="item-form">
+        <input type="text" id="item-title" placeholder="Title" required />
+        <textarea id="item-description" placeholder="Description" required></textarea>
+        
+        <button type="submit">Add Item</button>
+    </form>
+
+    <script src="{% static 'home.js' %}"></script>
+</body>
+</html>
